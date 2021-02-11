@@ -1,12 +1,12 @@
 #!/bin/bash
 SCPresq="aHR0cHM6Ly9hbnRob255bWFydGluZXpjLjAwMHdlYmhvc3RhcHAuY29tL0FETVBsdXMvVGVsZUJvdEdlbi9zb3VyY2Vz"
 bar="1;34m=====================================================\e[0m"
-check_ip () {
-MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
-MIP2=$(wget -qO- ipv4.icanhazip.com)
-[[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
-echo "$IP" > /usr/bin/vendor_code
-}
+#check_ip () {
+#MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
+#MIP2=$(wget -qO- ipv4.icanhazip.com)
+#[[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
+#echo "$IP" > /usr/bin/vendor_code
+#}
 veryfy_fun () {
 SRC="/etc/ADM-db/sources" && [[ ! -d ${SRC} ]] && mkdir ${SRC}
 unset ARQ
@@ -173,12 +173,12 @@ echo -e "$bar"
 echo -n "Opcion: 》 "
 read opcion
 case $opcion in
-0) ;;
-1) ini_token;;
-2) start_bot;;
-3) ini_id;;
-4) msj_prueba;;
-5) ayuda_fun;;
-*) bot_gen;;
+0);;
+1)ini_token;;
+2)start_bot;;
+3)ini_id;;
+4)msj_prueba;;
+5)ayuda_fun;;
+*)bot_gen;;
 esac
 }
