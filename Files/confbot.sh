@@ -1,31 +1,12 @@
 #!/bin/bash
 SCPresq="aHR0cHM6Ly9hbnRob255bWFydGluZXpjLjAwMHdlYmhvc3RhcHAuY29tL0FETVBsdXMvVGVsZUJvdEdlbi9zb3VyY2Vz"
 bar="1;34m=====================================================\e[0m"
-
 check_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MIP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$MIP" != "$MIP2" ]] && IP="$MIP2" || IP="$MIP"
 echo "$IP" > /usr/bin/vendor_code
 }
-
-function_verify () {
-  permited=$(curl -sSL "https://anthonymartinezc.000webhostapp.com/ADMPlus/TeleBotGen/Control-IP")
-  [[ $(echo $permited|grep "${IP}") = "" ]] && {
-  clear
-  echo -e "\n\n\n\e[31m====================================================="
-  echo -e "\e[31m      ¡LA IP $(wget -qO- ipv4.icanhazip.com) NO ESTA AUTORIZADA!\n     SI DESEAS USAR EL BOTGEN CONTACTE A @Thony_DroidYT"
-  echo -e "\e[31m=====================================================\n\n\n\e[0m"
-  [[ -d /etc/ADM-db ]] && rm -rf /etc/ADM-db
-[[ ! -e "/bin/ShellBot.sh" ]] && rm /bin/ShellBot.sh
-  exit 1
-  } || {
-  ### INTALAR VERCION DE SCRIPT
-  v1=$(curl -sSL "https://anthonymartinezc.000webhostapp.com/ADMPlus/TeleBotGen/Vercion")
-  echo "$v1" > /etc/ADM-db/vercion
-  }
-}
-
 veryfy_fun () {
 SRC="/etc/ADM-db/sources" && [[ ! -d ${SRC} ]] && mkdir ${SRC}
 unset ARQ
@@ -36,7 +17,6 @@ esac
 mv -f $HOME/$1 ${ARQ}/$1
 chmod +x ${ARQ}/$1
 }
-
 download () {
 clear
 echo -e "$bar"
@@ -57,7 +37,6 @@ done
  }
  rm $HOME/lista-arq
 }
-
 ini_token () {
 clear
 echo -e "$bar"
@@ -71,7 +50,6 @@ echo -e "  \033[1;32mtoken se guardo con exito!" && echo -e "$bar" && echo -e " 
 read foo
 bot_gen
 }
-
 ini_id () {
 clear
 echo -e "$bar"
@@ -85,7 +63,6 @@ echo -e "  \033[1;32mID guardo con exito!" && echo -e "$bar" && echo -e "  \033[
 read foo
 bot_gen
 }
-
 start_bot () {
 [[ ! -e "${CIDdir}/token" ]] && echo "null" > ${CIDdir}/token
 unset PIDGEN
@@ -119,7 +96,6 @@ sleep 3
 fi
 bot_gen
 }
-
 ayuda_fun () {
 clear
 echo -e "$bar"
@@ -141,19 +117,15 @@ echo -e "$bar"
 read foo
 bot_gen
 }
-
 bot_conf () {
 check_ip
 function_verify
 instaled=/etc/ADM-db/sources && [[ ! -d ${instaled} ]] && download
 bot_gen
 }
-
 msj_prueba () {
-
 TOKEN="$(cat /etc/ADM-db/token)"
 ID="$(cat /etc/ADM-db/Admin-ID)"
-
 [[ -z $TOKEN ]] && {
 	clear
 	echo -e "$bar"
@@ -181,7 +153,6 @@ ID="$(cat /etc/ADM-db/Admin-ID)"
 
 bot_gen
 }
-
 bot_gen () {
 clear
 unset PID_GEN
