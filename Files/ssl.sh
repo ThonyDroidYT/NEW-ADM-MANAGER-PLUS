@@ -2,9 +2,9 @@
 declare -A cor=( [0]="\033[1;37m" [1]="\033[1;34m" [2]="\033[1;31m" [3]="\033[1;33m" [4]="\033[1;32m" )
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
-API_TRANS="aHR0cHM6Ly93d3cuZHJvcGJveC5jb20vcy9sNmlxZjV4anRqbXBkeDUvdHJhbnM/ZGw9MA=="
+#API_TRANS="aHR0cHM6Ly93d3cuZHJvcGJveC5jb20vcy9sNmlxZjV4anRqbXBkeDUvdHJhbnM/ZGw9MA=="
 SUB_DOM='base64 -d'
-wget -O /usr/bin/trans $(echo $API_TRANS|$SUB_DOM) &> /dev/null
+#wget -O /usr/bin/trans $(echo $API_TRANS|$SUB_DOM) &> /dev/null
 # FUN TRANS
 fun_trans () { 
 local texto
