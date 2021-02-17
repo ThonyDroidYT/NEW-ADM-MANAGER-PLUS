@@ -16,7 +16,7 @@ echo 'echo -e "\e[1;31mNombre del Servidor : \e[1;37m$HOSTNAME\e[0m"' >> .bashrc
 echo 'echo -e "\e[1;31mFecha del Servidor : \e[1;37m$DATE\e[0m"' >> .bashrc
 echo 'echo -e "\e[1;31mHora del Servidor : \e[1;37m$TIME\e[0m"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "\e[1;33m                Bienvenido!               \e[0m"' >> .bashrc
-echo 'echo -e "\e[1;36mTeclee menu,adm,plus para abrir el script.\e[0m"' >> .bashrc
+echo 'echo -e "\e[1;32m                Bienvenido!               \e[0m"' >> .bashrc
+echo 'echo -e "\e[1;33mTeclee menu,adm,plus para abrir el script.\e[0m"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 fi
