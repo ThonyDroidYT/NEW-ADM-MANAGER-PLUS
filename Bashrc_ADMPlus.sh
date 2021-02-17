@@ -1,3 +1,5 @@
+#!/bin/bash
+#/16/02/2021
 if cat /root/.bashrc | grep ADMPlus; then
 echo -e ":)"
 else
