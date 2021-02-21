@@ -93,7 +93,7 @@ yellow="\e[1;33m"
 green="\033[1;32m"
 add="\033[1;32mAgregado:"
 fix="\033[1;31mCorregido:"
-mejor="\033[1;31mMejorado:"
+mejor="\033[1;35mMejorado:"
 #CAMBIOS
 cambios () {
 clear
