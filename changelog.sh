@@ -1,4 +1,9 @@
 #!/bin/bash
+#VERIF VERSION
+P_SERVER="https://www.admplus.tk"
+v1=$(wget -qO- https://git.io/admplusv)
+v2=$(cat /etc/ger-frm/version.txt)
+v3=$(curl -sSL "${P_SERVER}/version.txt")
 # Funcoes Globais
 msg () {
 local colors="/etc/new-adm-color"
