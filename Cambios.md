@@ -44,6 +44,7 @@
 #
 
 ### [v6.0] PRIMERA VERSION INICIAL
+* Traducido: AL ESPAÑOL 99%
 * Corregido: IDIOMA ESPAÑOL
 * Cambiado: COLORES DEL MENÚ
 * Agregado: CREADOR DE USUARIOS TEMPORALES
