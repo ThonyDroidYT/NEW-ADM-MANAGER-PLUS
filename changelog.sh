@@ -62,7 +62,7 @@ fix="\033[1;31mCorregido:"
 cambios () {
 clear
 msg -bar
-msg -verd "RESELLER: \e[1;31m$mensaje"
+msg -verd "RESELLER: $mensaje"
 msg -verd "KEY: \e[1;31m$key"
 msg -bar
 msg -azu "Lista de Cambios ${name} ${version} ${plain}"
