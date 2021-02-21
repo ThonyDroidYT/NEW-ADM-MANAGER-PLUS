@@ -77,7 +77,7 @@ SEMCOR='\e[0m'
 version_admplusfix () {
 [[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m$(fun_trans "ACTUALIZADA")" || vesaoSCT="\033[1;31m!$(fun_trans "NO ACTUALIZADA")"
 #msg -bar
-msg -purple "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat ${SCPfrm}/version.txt)\033[1;33m] \033[1;31m[${vesaoSCT}\033[1;31m]\033[0m"
+msg -purple "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat /etc/ger-frm/version.txt)\033[1;33m] \033[1;31m[${vesaoSCT}\033[1;31m]\033[0m"
 #msg -bar
 }
 version2="\033[1;32m7.0"
@@ -105,10 +105,10 @@ msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${plain}"
 msg -bar
 msg -ama "${add} ${yellow}SSLH"
-msg -ama "${add} BADVPN - SOPORTE NETFLIX"
-msg -ama "${mejor} CAMBIADOR DE COLORES"
-msg -ama "${add} CAMBIADOR DE ZONA HORARIA"
-msg -ama "${add} AGREGADOR DE MAS PUERTOS SSL"
+msg -ama "${add} ${yellow}BADVPN - SOPORTE NETFLIX"
+msg -ama "${mejor} ${yellow}CAMBIADOR DE COLORES"
+msg -ama "${add} ${yellow}CAMBIADOR DE ZONA HORARIA"
+msg -ama "${add} ${yellow}AGREGADOR DE MAS PUERTOS SSL"
 msg -bar
 }
 cambios
