@@ -1,5 +1,5 @@
 ```
-Lista de Cambios [NEW-ADM-PLUS]
+#Lista de Cambios [NEW-ADM-PLUS]
 ```
 
 ### [v7.0]
@@ -18,7 +18,7 @@ Lista de Cambios [NEW-ADM-PLUS]
 * Agregado: INSTALACION DE PANELWEB V2RAY
 * Agregado: INSTALACION DE WIREGUARD
 
-### [v6.0] PRIMERA VERSION VERSION
+#### [v6.0] PRIMERA VERSION VERSION
 * Corregido: IDIOMA ESPAÑOL
 * Cambiado: COLORES DEL MENÚ
 * Agregado: CREADOR DE USUARIOS TEMPORALES
