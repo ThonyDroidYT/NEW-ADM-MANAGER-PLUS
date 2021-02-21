@@ -1,22 +1,23 @@
 Lista de Cambios [NEW-ADM-PLUS]
 
-# [v7.0]
+### [v7.0]
 * Agregado: BADVPN - SOPORTE NETFLIX
 * Agregado: CAMBIADOR DE ZONA HORARIA
 * Corregido: CAMBIADOR DE COLORES
 
-# [v6.8]
+### [v6.8]
 * Agregado: INSTALACIÓN DE SSLH
 * Agregado: INSTALACIÓN DE TROJAN
 * Corregido: SISTEMA DE TRADUCCIÓN
 * Mejorado : MENU INSTALACIÓN
 
-# [v6.2]
+### [v6.2]
 * Agregado: INSTALACION DE V2RAY
 * Agregado: INSTALACION DE PANELWEB V2RAY
 * Agregado: INSTALACION DE WIREGUARD
 
-# [v6.0] FIRST VERSION
+### [v6.0] PRIMERA VERSION VERSION
 * Corregido: IDIOMA ESPAÑOL
 * Cambiado: COLORES DEL MENÚ
 * Agregado: CREADOR DE USUARIOS TEMPORALES
+* Actualizado: INSTALADOR DE OPENVPN
