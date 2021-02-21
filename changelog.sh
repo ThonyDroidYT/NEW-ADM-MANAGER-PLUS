@@ -59,6 +59,7 @@ yellow="\e[1;33m"
 green="\033[1;32m"
 add="\033[1;32mAgregado:"
 fix="\033[1;31mCorregido:"
+mejor="\033[1;31mMejorado:"
 #CAMBIOS
 cambios () {
 clear
@@ -69,6 +70,10 @@ msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${plain}"
 msg -bar
 msg -ama "${add} ${yellow}SSLH"
+msg -ama "${add} BADVPN - SOPORTE NETFLIX"
+msg -ama "${mejor} CAMBIADOR DE COLORES"
+msg -ama "${add} CAMBIADOR DE ZONA HORARIA"
+msg -ama "${add} AGREGADOR DE MAS PUERTOS SSL"
 msg -bar
 }
 cambios
