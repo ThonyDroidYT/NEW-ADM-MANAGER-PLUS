@@ -100,6 +100,7 @@ clear
 msg -bar
 msg -verd "RESELLER: $mensaje"
 msg -verd "KEY: \e[1;31m$key"
+msg -bar
 version_admplusfix
 msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${plain}"
