@@ -82,7 +82,7 @@ msg -ama "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat
 }
 version2="\033[1;32m7.0"
 version=$(wget -qO- https://git.io/admplusv)
-update=$(wget -qO- https://www.admplus.tk/update.txt)
+update1=$(wget -qO- https://www.admplus.tk/update.txt)
 key=$(cat /etc/newadm/key.txt)
 mensaje=$(cat /etc/newadm/message.txt)
 name="\033[1;32m[NEW-ADM-PLUS]"
@@ -95,12 +95,15 @@ green="\033[1;32m"
 add="\033[1;32mAgregado:"
 fix="\033[1;31mCorregido:"
 mejor="\033[1;35mMejorado:"
+update="21/02/2021"
 #CAMBIOS
 cambios () {
 clear
 msg -bar
-msg -verd "RESELLER: $mensaje"
-msg -verd "KEY: \e[1;31m$key"
+msg -ama " CRÉDITOS Y REGISTRO DE CAMBIOS "
+msg -bar
+msg -verd "RESELLER AUTORIZADO: $mensaje"
+msg -verd "KEY DE INSTALACIÓN: \e[1;31m$key"
 msg -bar
 version_admplusfix
 msg -bar
