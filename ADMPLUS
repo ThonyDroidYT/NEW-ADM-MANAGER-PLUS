@@ -1,0 +1,7 @@
+#!/bin/bash
+#21/02/2021
+cambios=$(wget -qO- https://www.admplus.tk/changelog.sh)
+
+changelog () {
+${cambios}
+}
