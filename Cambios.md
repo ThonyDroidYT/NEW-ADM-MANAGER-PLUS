@@ -1,5 +1,5 @@
 ```
-#Lista de Cambios [NEW-ADM-PLUS]
+Lista de Cambios [NEW-ADM-PLUS]
 ```
 
 ### [v7.0]
