@@ -47,7 +47,7 @@ SEMCOR='\e[0m'
 }
 
 version2="\033[1;32m7.0"
-versión=\e[1;32m$(wget -qO- https://git.io/admplusv)
+version=\e[1;32m$(wget -qO- https://git.io/admplusv)
 name="\033[1;33mMULTISCRIPT-TD"
 plain="\033[0m"
 cyan="\033[1;36m"
