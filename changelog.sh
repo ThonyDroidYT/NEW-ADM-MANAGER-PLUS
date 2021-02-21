@@ -103,7 +103,7 @@ msg -verd "KEY: \e[1;31m$key"
 msg -bar
 version_admplusfix
 msg -bar
-msg -azu "Lista de Cambios ${name} ${yellow}${version} ${plain}"
+msg -azu "Lista de Cambios ${name} ${yellow}${version} ${cyan}10/02/2021 ${plain}"
 msg -bar
 msg -ama "${add} ${yellow}SSLH MULTIPLEX"
 msg -ama "${add} ${yellow}BADVPN - SOPORTE NETFLIX"
