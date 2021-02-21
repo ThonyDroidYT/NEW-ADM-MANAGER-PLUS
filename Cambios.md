@@ -1,9 +1,9 @@
-##### Lista de Cambios [NEW-ADM-PLUS]
+### Lista de Cambios [NEW-ADM-PLUS]
 
 # [v7.0]
 * Agregado: BADVPN - SOPORTE NETFLIX
 * Agregado: CAMBIADOR DE ZONA HORARIA
-* Corregido:
+* Corregido: CAMBIADOR DE COLORES
 
 
 # [v6.8]
