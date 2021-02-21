@@ -47,7 +47,7 @@ SEMCOR='\e[0m'
 }
 
 version2="\033[1;32m7.0"
-version=\e[1;32m$(wget -qO- https://git.io/admplusv)
+version=$(wget -qO- https://git.io/admplusv)
 key=$(cat /etc/newadm/key.txt)
 mensaje=$(cat /etc/newadm/message.txt)
 name="\033[1;33m[NEW-ADM-PLUS]"
@@ -65,7 +65,7 @@ msg -bar
 msg -verd "RESELLER: $mensaje"
 msg -verd "KEY: \e[1;31m$key"
 msg -bar
-msg -azu "Lista de Cambios ${name} ${version} ${plain}"
+msg -azu "Lista de Cambios ${name} ${green}${version} ${plain}"
 msg -ama "${add} SSLH"
 msg -bar
 }
