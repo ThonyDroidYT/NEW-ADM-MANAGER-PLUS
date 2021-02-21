@@ -45,7 +45,12 @@ SEMCOR='\e[0m'
   "-bar2"|"-bar")cor="${COLOR[4]}=========================================================" && echo -e "${SEMCOR}${cor}${SEMCOR}";;
  esac
 }
-
+version_admplusfix () {
+[[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m$(fun_trans "ACTUALIZADA")" || vesaoSCT="\033[1;31m!$(fun_trans "NO ACTUALIZADA")"
+#msg -bar
+msg -purple "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat ${SCPfrm}/version.txt)\033[1;33m] \033[1;31m[${vesaoSCT}\033[1;31m]\033[0m"
+#msg -bar
+}
 version2="\033[1;32m7.0"
 version=$(wget -qO- https://git.io/admplusv)
 key=$(cat /etc/newadm/key.txt)
@@ -66,6 +71,7 @@ clear
 msg -bar
 msg -verd "RESELLER: $mensaje"
 msg -verd "KEY: \e[1;31m$key"
+version_admplusfix
 msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${plain}"
 msg -bar
