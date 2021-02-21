@@ -103,7 +103,7 @@ msg -bar
 msg -ama "       CRÉDITOS Y REGISTRO DE CAMBIOS      "
 msg -bar
 msg -verd "RESELLER AUTORIZADO: $mensaje"
-msg -verd "KEY INSTALACIÓN: \e[1;31m$key"
+msg -verd "KEY USADA: \e[1;31m$key"
 version_admplusfix
 msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${cyan}${update} ${plain}"
