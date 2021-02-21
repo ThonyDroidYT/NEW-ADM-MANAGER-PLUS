@@ -77,7 +77,7 @@ SEMCOR='\e[0m'
 version_admplusfix () {
 [[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m$(fun_trans "ACTUALIZADA")" || vesaoSCT="\033[1;31m!$(fun_trans "NO ACTUALIZADA")"
 #msg -bar
-msg -purple "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat /etc/ger-frm/version.txt)\033[1;33m] \033[1;31m[${vesaoSCT}\033[1;31m]\033[0m"
+msg -ama "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat /etc/ger-frm/version.txt)\033[1;33m] \033[1;31m[${vesaoSCT}\033[1;31m]\033[0m"
 #msg -bar
 }
 version2="\033[1;32m7.0"
