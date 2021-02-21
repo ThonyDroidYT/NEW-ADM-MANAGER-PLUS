@@ -100,7 +100,7 @@ update="21/02/2021"
 cambios () {
 clear
 msg -bar
-msg -ama "\033[44m               CRÉDITOS Y REGISTRO DE CAMBIOS          "
+msg -ama "\033[44m              CRÉDITOS Y REGISTRO DE CAMBIOS            "
 msg -bar
 msg -verd "RESELLER AUTORIZADO: $mensaje"
 msg -verd "KEY USADA: \e[1;31m$key"
