@@ -100,11 +100,10 @@ update="21/02/2021"
 cambios () {
 clear
 msg -bar
-msg -ama " CRÉDITOS Y REGISTRO DE CAMBIOS "
+msg -ama "       CRÉDITOS Y REGISTRO DE CAMBIOS      "
 msg -bar
 msg -verd "RESELLER AUTORIZADO: $mensaje"
 msg -verd "KEY INSTALACIÓN: \e[1;31m$key"
-msg -bar
 version_admplusfix
 msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${cyan}${update} ${plain}"
