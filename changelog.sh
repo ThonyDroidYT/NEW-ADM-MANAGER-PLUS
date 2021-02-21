@@ -105,7 +105,7 @@ version_admplusfix
 msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${plain}"
 msg -bar
-msg -ama "${add} ${yellow}SSLH"
+msg -ama "${add} ${yellow}SSLH MULTIPLEX"
 msg -ama "${add} ${yellow}BADVPN - SOPORTE NETFLIX"
 msg -ama "${mejor} ${yellow}CAMBIADOR DE COLORES"
 msg -ama "${add} ${yellow}CAMBIADOR DE ZONA HORARIA"
