@@ -50,7 +50,7 @@ version2="\033[1;32m7.0"
 version=$(wget -qO- https://git.io/admplusv)
 key=$(cat /etc/newadm/key.txt)
 mensaje=$(cat /etc/newadm/message.txt)
-name="\033[1;33m[NEW-ADM-PLUS]"
+name="\033[1;32m[NEW-ADM-PLUS]"
 plain="\033[0m"
 cyan="\033[1;36m"
 red="\033[1;31m"
@@ -65,8 +65,9 @@ msg -bar
 msg -verd "RESELLER: $mensaje"
 msg -verd "KEY: \e[1;31m$key"
 msg -bar
-msg -azu "Lista de Cambios ${name} ${green}${version} ${plain}"
-msg -ama "${add} SSLH"
+msg -azu "Lista de Cambios ${name} ${yellow}${version} ${plain}"
+msg -bar
+msg -ama "${add} ${yellow}SSLH"
 msg -bar
 }
 cambios
