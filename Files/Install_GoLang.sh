@@ -49,8 +49,7 @@ exit;;
 1)goinst;;
 2)removego;;
 *)echo -e "\e[1;31m¡Porfavor Escoge la Opción Correcta!\e[0m"
-gomenu
-;;
+gomenu;;
 esac
 }
 gomenu
