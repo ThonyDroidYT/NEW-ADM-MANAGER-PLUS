@@ -21,12 +21,12 @@ rm go1.15.linux-amd64.tar.gz
 source /root/.bashrc
 fi
 sleep 5
-echo -e "Reiniciando Fuente de Terminal..."
+echo -e "\e[1;32mReiniciando Fuente de Terminal...\e[0m"
 fi
 echo -e "\033[1;33m Para finalizar el proceso de Instalacion de GO escribe :\033[0m"
 echo -e "\033[1;32m source ~/.profile\033[0m"
-echo -e "\033[1;31mPRESIONE ENTER PARA CONTINUAR\033[0m"
-read -p " "
-exit 0
+#echo -e "\033[1;31mPRESIONE ENTER PARA CONTINUAR\033[0m"
+#read -p " "
+#exit 0
 }
 goinst
