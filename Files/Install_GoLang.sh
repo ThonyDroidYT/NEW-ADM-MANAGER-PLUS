@@ -6,7 +6,7 @@ read -p "[S/N]: " yesno
 tput cuu1 && tput dl1
 done
 if [[ ${yesno} = @(s|S|y|Y) ]]; then
-echo -e "\e[1;32]Instalando...\e[0m"
+echo -e "\e[1;32mInstalando...\e[0m"
 cd
 rm -rf /usr/local/go 1> /dev/null 2> /dev/null
 wget https://golang.org/dl/go1.15.linux-amd64.tar.gz 1> /dev/null 2> /dev/null
