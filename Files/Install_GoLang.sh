@@ -1,3 +1,7 @@
+#!/bin/bash
+funtion removego () {
+rm -rf /usr/local/go/
+}
 function goinst(){
 echo -e "\e[1;33mA continuacion se instalara el paquete GO Lang\e[0m"
 echo -e "\e[1;33mContinuar?\e[0m"
@@ -29,4 +33,22 @@ echo -e "\033[1;32m source ~/.profile\033[0m"
 #read -p " "
 #exit 0
 }
-goinst
+gomenu () {
+echo "${barra}"
+echo -e "\e[1;36m     GO Lang    \e[1;32m[NEW-ADM-PLUS] \e[0m"
+echo "${barra}"
+echo -e "\e[1;32m[1] \e[1;31m> \e[1;36mINSTALAR GO Lang \e[0m"
+echo -e "\e[1;32m[2] \e[1;31m> \e[1;36mDESINSTALAR GO Lang \e[0m"
+read -p "Opción: 》" opcion
+case $opcion in
+0)
+clear
+exit;;
+1)goinst;;
+2)removego;;
+*)echo -e "\e[1;31mEscoge la Opción Correcta\e[0m"
+gomenu
+;;
+esac
+}
+gomenu
