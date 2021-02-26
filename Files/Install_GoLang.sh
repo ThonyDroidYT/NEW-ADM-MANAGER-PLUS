@@ -36,9 +36,10 @@ echo -e "\033[1;32m source ~/.profile\033[0m"
 #exit 0
 }
 gomenu () {
-echo "${barra}"
+clear
+echo -e "${barra}"
 echo -e "\e[1;36m     GO Lang    \e[1;32m[NEW-ADM-PLUS] \e[0m"
-echo "${barra}"
+echo -e "${barra}"
 echo -e "\e[1;32m[1] \e[1;31m> \e[1;36mINSTALAR GO Lang \e[0m"
 echo -e "\e[1;32m[2] \e[1;31m> \e[1;36mDESINSTALAR GO Lang \e[0m"
 read -p "Opción: 》" opcion
