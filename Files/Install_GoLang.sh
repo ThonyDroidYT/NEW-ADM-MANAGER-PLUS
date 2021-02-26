@@ -1,8 +1,8 @@
 #!/bin/bash
-funtion removego(){
+removego () {
 rm -rf /usr/local/go
 }
-function goinst(){
+funtion goinst(){
 echo -e "\e[1;33mA continuacion se instalara el paquete GO Lang\e[0m"
 echo -e "\e[1;33mContinuar?\e[0m"
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
