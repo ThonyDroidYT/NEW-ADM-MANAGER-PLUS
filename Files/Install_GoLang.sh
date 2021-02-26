@@ -1,6 +1,6 @@
 #!/bin/bash
-funtion removego () {
-rm -rf /usr/local/go/
+funtion removego(){
+rm -rf /usr/local/go
 }
 function goinst(){
 echo -e "\e[1;33mA continuacion se instalara el paquete GO Lang\e[0m"
