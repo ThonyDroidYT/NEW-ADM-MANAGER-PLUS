@@ -42,6 +42,7 @@ echo -e "\e[1;36m     GO Lang    \e[1;32m[NEW-ADM-PLUS] \e[0m"
 echo -e "${barra}"
 echo -e "\e[1;32m[1] \e[1;31m> \e[1;36mINSTALAR GO Lang \e[0m"
 echo -e "\e[1;32m[2] \e[1;31m> \e[1;36mDESINSTALAR GO Lang \e[0m"
+echo -e "\e[1;32m[0] \e[1;31m> SALIR \e[0m"
 read -p "Opción: 》" opcion
 case $opcion in
 0)
