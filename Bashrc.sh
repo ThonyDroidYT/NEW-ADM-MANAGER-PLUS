@@ -1,7 +1,7 @@
 #!/bin/bash
 #/16/02/2021
 if cat /root/.bashrc | grep ADMPlus; then
-echo -e ":)"
+#echo -e ":)"
 exit
 else
 cp .bashrc .bashrc.backup
