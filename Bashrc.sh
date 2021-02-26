@@ -7,7 +7,7 @@ else
 cp .bashrc .bashrc.backup
 echo "export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/games;" >> .bashrc
 echo "clear" >> .bashrc
-echo "figlet ADMPlus | lolcat -a -d 10" >> .bashrc
+echo "figlet ADMPlus | lolcat -a -d 08" >> .bashrc
 #echo "figlet -p -f smslant ADMPlus | lolcat" >> .bashrc
 #echo "figlet -p -f smslant < /etc/newadm/nick | lolcat" >> .bashrc
 echo 'DATE=$(date +"%d-%m-%y")' >> .bashrc
