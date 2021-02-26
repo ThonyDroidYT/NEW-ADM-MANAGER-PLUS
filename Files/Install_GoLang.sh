@@ -2,6 +2,8 @@
 barra="\033[1;34m======================================================\033[0m"
 removego () {
 rm -rf /usr/local/go
+rm -rf $HOME/go
+killall go 1> /dev/null 2> /dev/null
 }
 #funtion
 goinst () {
