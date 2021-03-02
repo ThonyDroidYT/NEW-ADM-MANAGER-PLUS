@@ -92,27 +92,30 @@ red="\033[1;31m"
 purple="\033[1;35m"
 yellow="\e[1;33m"
 green="\033[1;32m"
-add="\033[1;32mAgregado:"
-fix="\033[1;31mCorregido:"
-mejor="\033[1;35mMejorado:"
+#add="\033[1;32mAgregado:"
+add="$(msg -verd "$(fun_trans "Agregado"):")"
+#fix="\033[1;31mCorregido:"
+fix="$(msg -verm2 "$(fun_trans "Corregido"):")"
+#mejor="\033[1;35mMejorado:"
+mejor="$(msg -purple "$(fun_trans "Mejorado")")"
 update="21/02/2021"
 #CAMBIOS
 cambios () {
 clear
 msg -bar
-msg -ama "\033[44m              CRÉDITOS Y REGISTRO DE CAMBIOS             "
+msg -ama "\033[44m              $(fun_trans "CRÉDITOS Y REGISTRO DE CAMBIOS")             "
 msg -bar
-msg -verd "RESELLER AUTORIZADO: $mensaje"
-msg -verd "KEY USADA: \e[1;31m$key"
+msg -verd "$(fun_trans "RESELLER AUTORIZADO"): $(msg -verm2 "$mensaje")"
+msg -verd "$(fun_trans "KEY USADA"): $(msg -verm2 "$key")"
 version_admplusfix
 msg -bar
 msg -azu "Lista de Cambios ${name} ${yellow}${version} ${cyan}${update} ${plain}"
 msg -bar
-msg -ama "${add} ${yellow}SSLH MULTIPLEX"
-msg -ama "${add} ${yellow}BADVPN - SOPORTE NETFLIX"
-msg -ama "${mejor} ${yellow}CAMBIADOR DE COLORES"
-msg -ama "${add} ${yellow}CAMBIADOR DE ZONA HORARIA"
-msg -ama "${add} ${yellow}AGREGADOR DE MAS PUERTOS SSL"
+msg -ama "${add} $(msg -ama "$(fun_trans "SSLH MULTIPLEX")")"
+msg -ama "${add} $(msg -ama "$(fun_trans "BADVPN - SOPORTE NETFLIX")")"
+msg -ama "${mejor} $(msg -ama "$(fun_trans "CAMBIADOR DE COLORES")")"
+msg -ama "${add} $(msg -ama "$(fun_trans "CAMBIADOR DE ZONA HORARIA")")"
+msg -ama "${add} $(msg -ama "$(fun_trans "AGREGADOR DE MAS PUERTOS SSL")")"
 msg -bar
 }
 cambios
