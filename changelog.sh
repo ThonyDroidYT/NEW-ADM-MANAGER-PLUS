@@ -97,7 +97,7 @@ add="$(msg -verd "$(fun_trans "Agregado"):")"
 #fix="\033[1;31mCorregido:"
 fix="$(msg -verm2 "$(fun_trans "Corregido"):")"
 #mejor="\033[1;35mMejorado:"
-mejor="$(msg -purple "$(fun_trans "Mejorado")")"
+mejor="$(msg -purple "$(fun_trans "Mejorado"):")"
 update="21/02/2021"
 #CAMBIOS
 cambios () {
