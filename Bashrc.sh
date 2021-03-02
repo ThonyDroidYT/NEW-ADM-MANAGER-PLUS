@@ -19,7 +19,7 @@ echo 'echo -e "Fecha del Servidor : $DATE"' >> .bashrc
 echo 'echo -e "Hora del Servidor : $TIME"' >> .bashrc
 echo 'echo -e "Reseller/Vendedor: $(cat /etc/newadm/message.txt)"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-#echo 'echo -e "                Bienvenido!               \e[0m"' >> .bashrc
+echo 'echo -e "                Bienvenido!               \e[0m"' >> .bashrc
 echo 'echo -e "Teclee menu,adm,plus para abrir el script"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 fi
