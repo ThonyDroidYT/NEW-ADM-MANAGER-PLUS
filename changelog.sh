@@ -109,7 +109,7 @@ msg -verd "$(fun_trans "RESELLER AUTORIZADO"): $(msg -verm2 "$mensaje")"
 msg -verd "$(fun_trans "KEY USADA"): $(msg -verm2 "$key")"
 version_admplusfix
 msg -bar
-msg -azu "Lista de Cambios ${name} ${yellow}${version} ${cyan}${update} ${plain}"
+msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}${version} ${cyan}${update} ${plain}"
 msg -bar
 msg -ama "${add} $(msg -ama "$(fun_trans "SSLH MULTIPLEX")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "BADVPN - SOPORTE NETFLIX")")"
