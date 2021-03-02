@@ -5,6 +5,9 @@ if cat /root/.bashrc | grep ADMPlus; then
 exit
 else
 cp .bashrc .bashrc.backup
+echo '
+
+'
 echo "export PATH=$PATH:/usr/sbin:/usr/local/sbin:/usr/local/bin:/usr/bin:/sbin:/bin:/usr/games;" >> .bashrc
 echo "clear" >> .bashrc
 echo "figlet ADMPlus | lolcat -a -d 08" >> .bashrc
@@ -17,7 +20,8 @@ echo 'echo -e "Nombre del Servidor : $HOSTNAME"' >> .bashrc
 echo 'echo -e "Fecha del Servidor : $DATE"' >> .bashrc
 echo 'echo -e "Hora del Servidor : $TIME"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
-echo 'echo -e "                Bienvenido!               \e[0m"' >> .bashrc
+#echo 'echo -e "                Bienvenido!               \e[0m"' >> .bashrc
+ echo 'echo -e "                $(fun_trans "Bienvenido") \e[0m"' >> .bashrc
 echo 'echo -e "Teclee menu,adm,plus para abrir el script"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 fi
