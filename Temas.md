@@ -1,10 +1,12 @@
 #### Tema 1
+![logo](
 
 * Aplicar Tema
 
 rm -rf /etc/newadm/color && echo "7 6 5 4 3 2 1 1" >> /etc/newadm/color
 
 #### Tema 2
+![logo](
 
 * Aplicar Tema
 
