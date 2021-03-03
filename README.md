@@ -1,6 +1,6 @@
 # NEW-ADM-MANAGER-PLUS
 ADM-MANAGER-PLUS BY THONY.DROID
 
-Lista de Cambios - [API 1](
+- [Lista de Cambios](https://github.com/ThonyDroidYT/NEW-ADM-MANAGER-PLUS/blob/gh-pages/Cambios.md)
 
-Temas y Colores - [API 1](
+- [Temas y Colores](https://github.com/ThonyDroidYT/NEW-ADM-MANAGER-PLUS/blob/gh-pages/Temas.md)
