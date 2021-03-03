@@ -2,10 +2,10 @@
 
 * Aplicar Tema
 
-rm /etc/newadm/color && echo "7 6 5 4 3 2 1 1" >> /etc/newadm/color
+rm -rf /etc/newadm/color && echo "7 6 5 4 3 2 1 1" >> /etc/newadm/color
 
 #### Tema 2
 
 * Aplicar Tema
 
-rm /etc/newadm/color && echo "6 6 6 6 6 6 1 1" >> /etc/newadm/color
+rm -rf /etc/newadm/color && echo "6 6 6 6 6 6 1 1" >> /etc/newadm/color
