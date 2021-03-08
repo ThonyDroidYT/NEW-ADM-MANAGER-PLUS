@@ -1,0 +1,17 @@
+#!bin/bash
+SCPdir="/etc/newadm"
+SCPusr="${SCPdir}/ger-user"
+SCPinst="/etc/ger-inst"
+SCPidioma="${SCPdir}/idioma"
+SCPfrm="/etc/ger-frm"
+echo -e "\033[1;31m ¡$(fun_trans "Que Verguenza! Su versión es Pirata")\033[0m"
+echo -e""
+echo -e "\033[1;31m $(fun_trans "Use [NEW-ADM-PLUS] Original") By THONYDROID\033[0m"
+echo -e "\033[1;31m $(fun_trans "Ayude a Quien Realmente desarrolla y se Dedica al Proyecto")!\033[0m"
+rm -rf ${SCPdir} &>/dev/null
+rm -rf ${SCPusr} &>/dev/null
+rm -rf ${SCPfrm} &>/dev/null
+rm -rf ${SCPinst} &>/dev/null
+rm -rf ${SCPfrm} &>/dev/null
+rm -rf ${SCPidioma} &>/dev/null
+exit 0
