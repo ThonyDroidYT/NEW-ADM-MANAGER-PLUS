@@ -2,6 +2,10 @@
 # Author: Jrohy
 # github: https://github.com/Jrohy/multi-v2ray
 
+#Mod
+#BY THONYDROID
+#12/03/2021
+
 #定时任务北京执行时间(0~23)
 BEIJING_UPDATE_TIME=3
 
@@ -18,7 +22,8 @@ REMOVE=0
 
 CHINESE=0
 
-BASE_SOURCE_PATH="https://multi.netlify.app"
+#BASE_SOURCE_PATH="https://multi.netlify.app"
+BASE_SOURCE_PATH="https://raw.githubusercontent.com/ThonyDroidYT/multi-v2ray/master"
 
 UTIL_PATH="/etc/v2ray_util/util.cfg"
 
