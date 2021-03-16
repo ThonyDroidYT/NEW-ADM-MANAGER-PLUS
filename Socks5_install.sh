@@ -7,7 +7,7 @@ socks5 () {
 echo -e "Instalando Socks5 espere..."
 bash <(curl -Ls https://www.admplus.tk/Files/Danted.sh)
 echo -e "Escribe un puerto para Socks5"
-read -p ": " sockcinco
+read -p "Puerto: 》" sockcinco
 if lsof -Pi :$sockcinco -sTCP:LISTEN -t >/dev/null ; then
 echo "Ya esta en uso ese puerto"
 else
