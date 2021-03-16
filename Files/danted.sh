@@ -1,7 +1,7 @@
 #!/bin/bash
-apt-get remove dante-server -y  1> /dev/null 2> /dev/null
-apt-get purge dante-server -y 1> /dev/null 2> /dev/null
-apt-get install dante-server -y 1> /dev/null 2> /dev/null
+apt-get remove dante-server -y &> /dev/null
+apt-get purge dante-server -y &> /dev/null
+apt-get install dante-server -y &> /dev/null
 cp /etc/danted.conf /etc/danted.conf-bak
 cat >/etc/danted.conf <<-EOF
 logoutput: /var/log/danted.log
