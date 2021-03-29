@@ -1,11 +1,10 @@
 #!/bin/bash
 #26/01/2021
 clear
-clear
 # DIRECCIONES DE CARPETAS Y ARCHIVOS 
 
 SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit 1
-SCPusr="${SCPdir}/User" && [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr}
+SCPusr="${SCPdir}/ger-user" && [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr}
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPidioma="${SCPdir}/idioma" && [[ ! -e ${SCPidioma} ]] && touch ${SCPidioma}
