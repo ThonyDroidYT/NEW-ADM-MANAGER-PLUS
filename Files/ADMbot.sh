@@ -8,6 +8,7 @@ SCPusr="${SCPdir}/ger-user" && [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr}
 SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPinst="/etc/ger-inst" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPidioma="${SCPdir}/idioma" && [[ ! -e ${SCPidioma} ]] && touch ${SCPidioma}
+USRdatabase="/etc/ADMuser"
 mkdir -p /etc/BOT &>/dev/null
 mkdir -p /etc/BOT-C &>/dev/null
 mkdir -p /etc/BOT-A &>/dev/null
@@ -17,7 +18,6 @@ mkdir -p /etc/BOT-TEMP &>/dev/null
 USRdatacredi="/etc/BOT-C2/creditos"
 
 ##### SERVIDOR TELEGRAM PERSONAL
-[[ $(dpkg --get-selections|grep -w "jq"|head -1) ]] || apt-get install jq -y &>/dev/null
 [[ ! -e "/bin/ShellBot.sh" ]] && wget -O /bin/ShellBot.sh https://www.dropbox.com/s/iq1cnpuytakc0lr/ShellBot.sh &> /dev/null
 [[ -e /etc/texto-bot ]] && rm /etc/texto-bot
 
@@ -55,7 +55,6 @@ msg -bar
 exit 0
 fi
 LINE='━━━━━━━━━━━━━━━━━━━━'
-USRdatabase="/etc/VPS-MX/VPS-MXuser"
 #IMPORTANDO API
 source ShellBot.sh
 ShellBot.init --token "$TOKEN"
@@ -284,7 +283,9 @@ SSHN="$(grep -c home /etc/passwd)"
 SSH2="$(echo ${SSHN}|bc)-2"
 echo "${SSH2}"|bc > /etc/BOT-A/SSH20.log
 SSH3="$(less /etc/BOT-A/SSH20.log)"
-SSH4="$(echo $SSH3)"
+#SSH4="$(echo $SSH3)"
+SSH4=$(awk  -F : '$3 >= 500 {print  $1}'  /etc/passwd | grep -v "nobody" | sort | wc -l)
+
 #ONLINES
 ONLINES="$(less /etc/VPS-MX/USRonlines)"
 ##DEMOS REGISTRADOS
