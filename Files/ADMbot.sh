@@ -4,10 +4,10 @@ clear
 clear
 # DIRECCIONES DE CARPETAS Y ARCHIVOS 
 
-SCPdir="/etc/VPS-MX" && [[ ! -d ${SCPdir} ]] && exit 1
-SCPusr="${SCPdir}/controlador" && [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr}
-SCPfrm="${SCPdir}/herramientas" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
-SCPinst="${SCPdir}/protocolos" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
+SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit 1
+SCPusr="${SCPdir}/User" && [[ ! -d ${SCPusr} ]] && mkdir ${SCPusr}
+SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
+SCPinst="/etc/ger-inst" && [[ ! -d ${SCPfrm} ]] && mkdir ${SCPfrm}
 SCPidioma="${SCPdir}/idioma" && [[ ! -e ${SCPidioma} ]] && touch ${SCPidioma}
 mkdir -p /etc/BOT &>/dev/null
 mkdir -p /etc/BOT-C &>/dev/null
