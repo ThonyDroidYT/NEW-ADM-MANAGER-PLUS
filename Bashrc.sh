@@ -1,6 +1,6 @@
 #!/bin/bash
 #/16/02/2021
-if cat /root/.bashrc | grep ADMPlus; then
+if cat /root/.bashrc | grep ADMPlus; then &> /dev/null
 #echo -e ":)"
 exit
 else
