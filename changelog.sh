@@ -31,6 +31,7 @@ fi
 # Funcoes Globais
 msg () {
 local colors="/etc/new-adm-color"
+#ra
 if [[ ! -e $colors ]]; then
 COLOR[0]='\033[1;37m' #BRAN='\033[1;37m'
 COLOR[1]='\e[31m' #VERMELHO='\e[31m'
@@ -81,7 +82,8 @@ msg -ama "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat
 #msg -bar
 }
 version2="\033[1;32m7.0"
-version=$(wget -qO- https://git.io/admplusv)
+#version=$(wget -qO- https://git.io/admplusv)
+version=$(curl -sSL "https://git.io/admplusv")
 update1=$(wget -qO- https://www.admplus.tk/update.txt)
 key=$(cat /etc/newadm/key.txt)
 mensaje=$(cat /etc/newadm/message.txt)
@@ -106,8 +108,8 @@ clear
 msg -bar
 msg -ama "\033[44m              $(fun_trans "CRÉDITOS Y REGISTRO DE CAMBIOS")             "
 msg -bar
-msg -verd "$(fun_trans "RESELLER AUTORIZADO"): $(msg -verm2 "$mensaje")"
-msg -verd "$(fun_trans "KEY USADA"): $(msg -verm2 "$key")"
+msg -verd "$(fun_trans "RESELLER AUTORIZADO"): $(msg -bra "$mensaje")"
+msg -verd "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
 version_admplusfix
 msg -bar
 msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}${version} ${cyan}${update} ${plain}"
