@@ -30,8 +30,8 @@ fi
 }
 # Funcoes Globais
 msg () {
-local colors="/etc/new-adm-color"
-#ra
+#local colors="/etc/new-adm-color"
+local colors="${SCPdir}/color"
 if [[ ! -e $colors ]]; then
 COLOR[0]='\033[1;37m' #BRAN='\033[1;37m'
 COLOR[1]='\e[31m' #VERMELHO='\e[31m'
