@@ -29,7 +29,7 @@ echo "${texto[$@]}"
 fi
 }
 # Funcoes Globais
-msg () {
+msge () {
 #local colors="/etc/new-adm-color"
 local colors="${SCPdir}/color"
 if [[ ! -e $colors ]]; then
