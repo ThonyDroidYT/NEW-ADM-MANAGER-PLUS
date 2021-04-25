@@ -37,8 +37,8 @@ clear
 msg -bar
 msg -ama "\033[44m              $(fun_trans "CRÉDITOS Y REGISTRO DE CAMBIOS")             "
 msg -bar
-msg -verd "$(fun_trans "RESELLER AUTORIZADO"): $(msg -bra "$mensaje")"
-msg -verd "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
+msg -verm2 "$(fun_trans "RESELLER AUTORIZADO"): $(msg -bra "$mensaje")"
+msg -verm2 "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
 version_admplusfix
 msg -bar
 msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}${version} ${cyan}${update} ${plain}"
