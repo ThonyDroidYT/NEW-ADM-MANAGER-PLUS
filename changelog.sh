@@ -35,8 +35,9 @@ update="[21/02/2021]"
 cambios () {
 clear
 msg -bar
-msg -ama "\033[44m              $(fun_trans "CRÉDITOS Y REGISTRO DE CAMBIOS")             "
+#msg -ama "\033[44m              $(fun_trans "CRÉDITOS Y REGISTRO DE CAMBIOS")             "
 msg -bar
+msg -ama "\033[1;100m              $(fun_trans "CRÉDITOS Y REGISTRO DE CAMBIOS")             "
 msg -verm2 "$(fun_trans "RESELLER AUTORIZADO"): $(msg -bra "$mensaje")"
 msg -verm2 "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
 version_admplusfix
