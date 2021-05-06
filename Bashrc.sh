@@ -23,3 +23,4 @@ echo 'echo -e "                ¡Bienvenido!               "' >> .bashrc
 echo 'echo -e "Teclee menu,adm,plus para abrir el script"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 fi
+sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null && continue || exit' /etc/newadm/menu
