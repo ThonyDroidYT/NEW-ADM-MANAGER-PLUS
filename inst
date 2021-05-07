@@ -21,4 +21,4 @@ echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh
 #EOF
 #sudo chmod +x /etc/ssh/login-notify.sh
 fi
-curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
+curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" #&> /dev/null
