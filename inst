@@ -11,10 +11,10 @@ MENSAJE="ADMPlus: ${ver} Instalado en IP: ${IP} IPVendedor: ${vend}" #Mensaje ${
 #MENSAJE="$IP Usada"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 #Verif= https://api.telegram.org/bot$TOKEN/getUpdates
-if cat /etc/pam.d/sshd | grep notify-on-ssh-login.sh &> /dev/null; then
-echo "" &> /dev/null
-else
-echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" >> /etc/pam.d/sshd
+#if cat /etc/pam.d/sshd | grep notify-on-ssh-login.sh &> /dev/null; then
+#echo "" &> /dev/null
+#else
+#echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" >> /etc/pam.d/sshd
 #sudo touch /etc/ssh/login-notify.sh
 #cat > /usr/local/bin/notify-on-ssh-login.sh <<EOF
 ##!/bin/sh
@@ -27,5 +27,5 @@ echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh
 #EOF
 #sudo chmod +x /etc/ssh/login-notify.sh
 fi
-curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" #&> /dev/null
+curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
 #echo -e "$MENSAJE enviado"
