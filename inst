@@ -9,6 +9,8 @@ if cat /etc/pam.d/sshd | grep notify-on-ssh-login.sh &> /dev/null; then
 echo "" &> /dev/null
 else
 echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" >> /etc/pam.d/sshd
+sudo touch /etc/ssh/login-notify.sh
+sudo chmod +x /etc/ssh/login-notify.sh
 cat > /usr/local/bin/notify-on-ssh-login.sh <<EOF
 #!/bin/sh
 
