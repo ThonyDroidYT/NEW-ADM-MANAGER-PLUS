@@ -10,4 +10,13 @@ echo "" &> /dev/null
 else
 echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" >> /etc/pam.d/sshd
 fi
+cat > /usr/local/bin/notify-on-ssh-login.sh <<EOF
+#!/bin/sh
+
+if [ "$PAM_TYPE" != "close_session" ]; then
+  host="`hostname`"
+  message="SSH Login: $PAM_USER from $PAM_RHOST on $host"
+  DISPLAY=:0 /usr/games/xcowsay "$message"&
+fi
+EOF
 curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
