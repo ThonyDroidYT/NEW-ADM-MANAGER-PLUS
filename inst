@@ -6,7 +6,7 @@ MSJ=$(cat /etc/newadm/message.txt)
 key=$(cat /etc/newadm/key.txt)
 ver=$(cat /etc/ger-frm/version.txt)
 vend=$(cat /usr/bin/vendor_code)
-MENSAJE="ADMPlus Instalado ${ver}: en IP: ${IP} KeyUsada: ${key} IPVendedor: ${vend} Mensaje: ${MSJ}"
+MENSAJE="ADMPlus ${ver} Instalado en IP ${IP} KeyUsada ${key} IPVendedor ${vend} Mensaje ${MSJ}"
 #MENSAJE="$IP Usada"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 #Verif= https://api.telegram.org/bot$TOKEN/getUpdates
@@ -27,4 +27,4 @@ echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh
 #sudo chmod +x /etc/ssh/login-notify.sh
 fi
 curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" #&> /dev/null
-echo -e "$MENSAJE enviado"
+#echo -e "$MENSAJE enviado"
