@@ -8,6 +8,6 @@ URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 if cat /etc/pam.d/sshd | grep notify-on-ssh-login.sh &> /dev/null; then
 echo "" &> /dev/null
 else
-echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" /etc/pam.d/sshd
+echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" >> /etc/pam.d/sshd
 fi
 curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
