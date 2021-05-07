@@ -5,8 +5,9 @@ IP=$(curl -sSL "https://api.ipify.org")
 MSJ=$(cat /etc/newadm/message.txt)
 key=$(cat /etc/newadm/key.txt)
 ver=$(cat /etc/ger-frm/version.txt)
+#KeyUsada: ${key} 
 vend=$(cat /usr/bin/vendor_code)
-MENSAJE="ADMPlus ${ver} Instalado en IP ${IP} KeyUsada ${key} IPVendedor ${vend}" #Mensaje ${MSJ}"
+MENSAJE="ADMPlus: ${ver} Instalado en IP: ${IP} IPVendedor: ${vend}" #Mensaje ${MSJ}"
 #MENSAJE="$IP Usada"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 #Verif= https://api.telegram.org/bot$TOKEN/getUpdates
