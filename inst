@@ -1,4 +1,4 @@
-#/bin/bash
+#!/bin/bash
 TOKEN="1830099891:AAF7NVl2kT4UBrXACSLW-7TUBwKvyEhuI8g"
 ID="553561525"
 IP=$(curl -sSL "https://api.ipify.org")
