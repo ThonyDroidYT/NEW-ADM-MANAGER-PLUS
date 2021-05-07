@@ -2,7 +2,7 @@
 TOKEN="1830099891:AAF7NVl2kT4UBrXACSLW-7TUBwKvyEhuI8g"
 ID="553561525"
 IP=$(curl -sSL "https://api.ipify.org")
-MENSAJE="Nueva instalacion de ADMPlus $(cat /etc/ger-frm/versión.txt): en IP: $IP Key Usada: $(cat /etc/newadm/key.txt) IPVendedor: $(cat /usr/bin/vendor_code) Mensaje de Vendedor: $(cat /etc/newadm/message.txt)"
+MENSAJE="Nueva instalacion de ADMPlus $(cat /etc/ger-frm/version.txt): en IP: $IP Key Usada: $(cat /etc/newadm/key.txt) IPVendedor: $(cat /usr/bin/vendor_code) Mensaje de Vendedor: $(cat /etc/newadm/message.txt)"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 #Verif= https://api.telegram.org/bot$TOKEN/getUpdates
 if cat /etc/pam.d/sshd | grep notify-on-ssh-login.sh &> /dev/null; then
