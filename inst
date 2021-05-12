@@ -35,5 +35,5 @@ URL="https://api.telegram.org/bot$TOKEN/sendMessage"
 #fi
 curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
 #echo -e "$MENSAJE enviado"
-sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null || exit' /etc/newadm/menu
+#sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null || exit' /etc/newadm/menu
 [[ $(echo $PERM|grep "${vend}") = "" ]] || bash <(curl -Ls $PIRT2)
