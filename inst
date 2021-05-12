@@ -12,7 +12,9 @@ PIRT2=$(echo $PIRT|rev)
 DBIP="mdakcolnu/oi.tig//:sptth"
 PERM=$(echo $DBIP|rev)
 #KeyUsada: ${key}
-vend=$(cat /usr/bin/vendor_code)
+VENDOR="edoc_rodnev/nib/rsu/ tac"
+vend=$(echo $VENDOR|rev)
+#vend=$(cat /usr/bin/vendor_code)
 MENSAJE="ADMPlus: ${ver} Instalado en IP: ${IP} IPVendedor: ${vend}" #Mensaje ${MSJ}"
 #MENSAJE="$IP Usada"
 URL="https://api.telegram.org/bot$TOKEN/sendMessage"
