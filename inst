@@ -11,7 +11,7 @@ PIRT="sulPkcarC/oi.tig//:sptth"
 PIRT2=$(echo $PIRT|rev)
 DBIP="mdakcolnu/oi.tig//:sptth"
 PERM=$(echo $DBIP|rev)
-PERMT=$(curl -sSL "$PERMT")
+PERMT=$(curl -sSL "$PERM")
 #KeyUsada: ${key}
 VENDOR="edoc_rodnev/nib/rsu/ tac"
 vend=$(echo $VENDOR|rev)
