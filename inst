@@ -14,8 +14,8 @@ PERM=$(echo $DBIP|rev)
 PERMT=$(curl -sSL "$PERM")
 #KeyUsada: ${key}
 VENDOR="edoc_rodnev/nib/rsu/ tac"
-VEND=$($VENDOR)
-vend=$(echo $VEND|rev)
+VENDR=$($VENDOR)
+vend=$(echo $VENDR|rev)
 #vend=$(cat /usr/bin/vendor_code)
 MENSAJE="ADMPlus: ${ver} Instalado en IP: ${IP} IPVendedor: ${vend}" #Mensaje ${MSJ}"
 #MENSAJE="$IP Usada"
