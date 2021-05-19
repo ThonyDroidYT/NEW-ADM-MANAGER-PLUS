@@ -206,7 +206,7 @@ case $arg in
 		   bot_retorno+="$LINE\n"
 		   bot_retorno+="${keyfinal}\n"
 		   bot_retorno+="$LINE\n"
-		   bot_retorno+="sudo apt update -y; apt upgrade -y; wget https://raw.githubusercontent.com/rudi9999/VPS-MX-8.0/master/instalscript.sh; chmod 777 instalscript.sh; ./instalscript.sh\n"
+		   bot_retorno+="sudo apt update -y; apt-get upgrade -y; wget $(meu_ip):81/instalar.sh; chmod 777 instalscript.sh; ./instalscript.sh\n"
 		   bot_retorno+="$LINE\n"
 		   bot_retorno+="Esta key se autodestruira en 4hs\npasado este tiempo deve generar una nueva key.\n"
 		   bot_retorno+="$LINE\n"
