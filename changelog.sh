@@ -45,6 +45,8 @@ version_admplusfix
 msg -bar
 msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}${version} ${cyan}${update} ${plain}"
 msg -bar
+msg -ama "${add} $(msg -ama "$(fun_trans "Cosas nuevas xd")")"
+msg -bar
 msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}v7.2 ${cyan}[21/02/2021] ${plain}"
 msg -bar
 msg -ama "${add} $(msg -ama "$(fun_trans "SSLH MULTIPLEX")")"
