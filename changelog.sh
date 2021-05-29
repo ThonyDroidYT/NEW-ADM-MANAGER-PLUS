@@ -1,4 +1,8 @@
 #!/bin/bash
+SCPdir="/etc/newadm" #&& [[ ! -d ${SCPdir} ]] && exit
+SCPfrm="/etc/ger-frm" #&& [[ ! -d ${SCPfrm} ]] && exit
+SCPinst="/etc/ger-inst" #&& [[ ! -d ${SCPinst} ]] && exit
+SCPusr="/etc/ger-user" #&& [[ ! -d ${SCPusr} ]] && exit
 #VERIF VERSION
 P_SERVER="https://www.admplus.tk"
 v1=$(wget -qO- https://git.io/admplusv)
