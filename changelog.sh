@@ -20,21 +20,18 @@ version=$(curl -sSL "https://git.io/admplusv")
 update1=$(wget -qO- https://www.admplus.tk/update.txt)
 key=$(cat /etc/newadm/key.txt)
 mensaje=$(cat /etc/newadm/message.txt)
-name="\033[1;32m[NEW-ADM-PLUS]"
+name="\033[1;32m[NEW-ADMPlus]"
 plain="\033[0m"
 cyan="\033[1;36m"
 red="\033[1;31m"
 purple="\033[1;35m"
 yellow="\e[1;33m"
 green="\033[1;32m"
-#add="\033[1;32mAgregado:"
 add="$(msg -verd "$(fun_trans "Agregado"):")"
-#fix="\033[1;31mCorregido:"
 fix="$(msg -verm2 "$(fun_trans "Corregido"):")"
-#mejor="\033[1;35mMejorado:"
 mejor="$(msg -purple "$(fun_trans "Mejorado"):")"
 #UPDATE
-update="[21/02/2021]"
+update="[29/05/2021]"
 #CAMBIOS
 cambios () {
 clear
@@ -47,6 +44,8 @@ msg -verm2 "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
 version_admplusfix
 msg -bar
 msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}${version} ${cyan}${update} ${plain}"
+msg -bar
+msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}v7.2 ${cyan}[21/02/2021] ${plain}"
 msg -bar
 msg -ama "${add} $(msg -ama "$(fun_trans "SSLH MULTIPLEX")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "BADVPN - SOPORTE NETFLIX")")"
