@@ -45,7 +45,13 @@ version_admplusfix
 msg -bar
 msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}${version} ${cyan}${update} ${plain}"
 msg -bar
-msg -ama "${add} $(msg -ama "$(fun_trans "Cosas nuevas xd")")"
+msg -ama "${mejor} $(msg -ama "$(fun_trans "Instalador de Trojan")")"
+msg -ama "${mejor} $(msg -ama "$(fun_trans "Creador de usuarios temporales")")"
+msg -ama "${add} $(msg -ama "$(fun_trans "Agregador de Puertos OpenSSH")")"
+msg -ama "${add} $(msg -ama "$(fun_trans "Instalador de Privoxy (HTTP Proxy)")")"
+msg -ama "${add} $(msg -ama "$(fun_trans "Instalador de OpenHTTPuncher (OHP-Proxy)")")"
+msg -ama "${mejor} $(msg -ama "$(fun_trans "Bot de Administración Telegram")")"
+msg -ama "${add} $(msg -ama "$(fun_trans "Nuevos comandos al Bot de Telegram")")"
 msg -bar
 msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}v7.2 ${cyan}[21/02/2021] ${plain}"
 msg -bar
