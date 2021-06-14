@@ -6,3 +6,5 @@ ADM-MANAGER-PLUS BY THONY.DROID
 - [Temas y Colores](https://github.com/ThonyDroidYT/NEW-ADM-MANAGER-PLUS/blob/gh-pages/Temas.md)
 
 - [Review NEW-ADM-PLUS](https://www.admplus.tk/portafolio.html)
+
+- [Corregir Idioma](https://github.com/ThonyDroidYT/NEW-ADM-MANAGER-PLUS/tree/gh-pages/idioma)
