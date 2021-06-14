@@ -1,4 +1,8 @@
 #!/bin/bash
+SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit
+SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
+SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
+SCPusr="${SCPdir}/ger-user" && [[ ! -d ${SCPusr} ]] && exit
 col1='\033[1;31m' 
 col2='\033[1;32m' 
 col3='\033[1;33m' 
@@ -37,11 +41,11 @@ fun_bar2 () {
         }
         
 
-clear&&clear
+clear && clear
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -verd "            PAYLOAD + SSL |BY KILLSHITO "
+msg -verd "            PAYLOAD + SSL |BY THONYDROID "
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "               $(fun_trans "SCRIPT AUTOCONFIGURACION")"
+msg -azu "               $(fun_trans "SCRIPT AUTOCONFIGURACION") $(msg -verd "[NEW-ADMPlus]")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -bra "$(fun_trans "Requiere tener libre los puertos"): 80, 443"
 echo
@@ -353,6 +357,11 @@ screen -dmS pythonwe python proxy.py -p 80&
 fun_bar2 'inst_py'
 rm -rf proxy.py
 echo
+[[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
+msg -verd "$(fun_trans "Instalado con éxito")"
+[[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
+msg -bra "$(fun_trans "Muchas gracias a @Killsito por este script")"
+[[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -bra "$(fun_trans "AHORA HAGA LO SIGUENTE") "
 msg -bra "$(fun_trans "PARA CREAR UN USUARIO ESCRIBA") :CREARUSER "
 msg -bra "$(fun_trans "PARA REMOVE UN USUARIO ESCRIBA") :REMOUSER "
