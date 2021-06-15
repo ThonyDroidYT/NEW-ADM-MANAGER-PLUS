@@ -1,8 +1,8 @@
 #!/bin/bash
-SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit
-SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
-SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
-SCPusr="${SCPdir}/ger-user" && [[ ! -d ${SCPusr} ]] && exit
+SCPdir="/etc/newadm" #&& [[ ! -d ${SCPdir} ]] && exit
+SCPfrm="/etc/ger-frm" #&& [[ ! -d ${SCPfrm} ]] && exit
+SCPinst="/etc/ger-inst" #&& [[ ! -d ${SCPinst} ]] && exit
+SCPusr="${SCPdir}/ger-user" #&& [[ ! -d ${SCPusr} ]] && exit
 col1='\033[1;31m' 
 col2='\033[1;32m' 
 col3='\033[1;33m' 
