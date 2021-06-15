@@ -54,6 +54,8 @@ inst_ssl () {
 pkill -f stunnel4
 pkill -f stunnel
 pkill -f 443
+kill $(lsof -t -i:80)
+kill $(lsof -t -i:443)
 pkill -f v2ray
 pkill -f v2-ui
 apt-get purge stunnel4 -y
