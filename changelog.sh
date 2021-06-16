@@ -43,7 +43,7 @@ msg -verm2 "$(fun_trans "RESELLER AUTORIZADO"): $(msg -bra "$mensaje")"
 msg -verm2 "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
 version_admplusfix
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "${version}") $(msg -azu "21/02/2021")"
+msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "${version}") $(msg -azu "10/02/2021")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -ama "${mejor} $(msg -ama "$(fun_trans "Instalador de Trojan")")"
 msg -ama "${mejor} $(msg -ama "$(fun_trans "Creador de usuarios temporales")")"
