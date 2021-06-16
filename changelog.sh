@@ -9,9 +9,9 @@ v1=$(wget -qO- https://git.io/admplusv)
 v2=$(cat /etc/ger-frm/version.txt)
 v3=$(curl -sSL "${P_SERVER}/version.txt")
 version_admplusfix () {
-[[ $v1 = $v2 ]] && vesaoSCT="\033[1;32m$(fun_trans "ACTUALIZADA")" || vesaoSCT="\033[1;31m!$(fun_trans "NO ACTUALIZADA")"
+[[ $v1 = $v2 ]] && vesaoSCT="$(msg -verd "$(fun_trans "ACTUALIZADA")")" || vesaoSCT="$(msg -verm2 "$(fun_trans "NO ACTUALIZADA")!")"
 #[[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -ama "$(fun_trans "ADM-Plus Versión Instalada:") \033[1;33m[\033[1;31m$(cat /etc/ger-frm/version.txt)\033[1;33m] \033[1;31m[${vesaoSCT}\033[1;31m]\033[0m"
+msg -purple "$(fun_trans "ADM-Plus Versión Instalada"): $(msg -ama "[")$(msg -verm2 "$(cat ${SCPfrm}/version.txt)")$(msg -ama "]") $(msg -verm2 "[")${vesaoSCT}$(msg -verm2 "]")"
 #[[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 }
 version2="\033[1;32m7.0"
