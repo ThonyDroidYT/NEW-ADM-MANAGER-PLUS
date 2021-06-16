@@ -6,7 +6,7 @@ SCPusr="/etc/ger-user" #&& [[ ! -d ${SCPusr} ]] && exit
 #VERIF VERSION
 P_SERVER="https://www.admplus.tk"
 v1=$(wget -qO- https://git.io/admplusv)
-v2=$(cat /etc/ger-frm/version.txt)
+v2=$(cat ${SCPfrm}/version.txt)
 v3=$(curl -sSL "${P_SERVER}/version.txt")
 version_admplusfix () {
 [[ $v1 = $v2 ]] && vesaoSCT="$(msg -verd "$(fun_trans "ACTUALIZADA")")" || vesaoSCT="$(msg -verm2 "$(fun_trans "NO ACTUALIZADA")!")"
@@ -15,18 +15,11 @@ msg -purple "$(fun_trans "ADM-Plus Versión Instalada"): $(msg -ama "[")$(msg -v
 #[[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 }
 version2="$(msg -verd "7.0")"
-#version=$(wget -qO- https://git.io/admplusv)
 version=$(curl -sSL "https://git.io/admplusv")
 update1=$(wget -qO- https://www.admplus.tk/update.txt)
-key=$(cat /etc/newadm/key.txt)
-mensaje=$(cat /etc/newadm/message.txt)
+key=$(cat ${SCPdir}/key.txt)
+mensaje=$(cat ${SCPdir}/message.txt)
 name="$(msg -verd "[NEW-ADMPlus]")"
-plain="\033[0m"
-cyan="\033[1;36m"
-red="\033[1;31m"
-purple="\033[1;35m"
-yellow="\e[1;33m"
-green="\033[1;32m"
 add="$(msg -verd "$(fun_trans "Agregado"):")"
 fix="$(msg -verm2 "$(fun_trans "Corregido"):")"
 mejor="$(msg -purple "$(fun_trans "Mejorado"):")"
@@ -43,7 +36,7 @@ msg -verm2 "$(fun_trans "RESELLER AUTORIZADO"): $(msg -bra "$mensaje")"
 msg -verm2 "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
 version_admplusfix
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "${version}") $(msg -azu "10/02/2021")"
+msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "${version}") $(msg -azu "${update}")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -ama "${mejor} $(msg -ama "$(fun_trans "Instalador de Trojan")")"
 msg -ama "${mejor} $(msg -ama "$(fun_trans "Creador de usuarios temporales")")"
@@ -54,7 +47,7 @@ msg -ama "${mejor} $(msg -ama "$(fun_trans "Bot de Administración Telegram")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "Nuevos comandos al Bot de Telegram")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "Creador de usuarios temporales (Bot Telegram)")")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "v7.2") $(msg -azu "${update}")"
+msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "v7.2") $(msg -azu "10/02/2021")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -ama "${add} $(msg -ama "$(fun_trans "SSLH MULTIPLEX")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "BADVPN - SOPORTE NETFLIX")")"
