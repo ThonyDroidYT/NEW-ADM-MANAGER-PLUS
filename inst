@@ -2,7 +2,7 @@
 #TOKEN="1830099891:AAF7NVl2kT4UBrXACSLW-7TUBwKvyEhuI8g"
 #TOK="g8IuhEyvKwBUT7-WLSCAXrBU4Tk2lVN7FAA:1989900381"
 TOK="g8IuhEyvKwBUT7-WLSCAXrBU4Tk2lVN7FAA:1989900381"
-TOKEN=$(echo $TOK|rev)
+TOKEN="$(echo $TOK|rev)"
 ID="553561525"
 IP=$(curl -sSL "https://api.ipify.org")
 MSJ=$(cat /etc/newadm/message.txt)
