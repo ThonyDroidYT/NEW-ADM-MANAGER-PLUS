@@ -14,13 +14,13 @@ version_admplusfix () {
 msg -purple "$(fun_trans "ADM-Plus Versión Instalada"): $(msg -ama "[")$(msg -verm2 "$(cat ${SCPfrm}/version.txt)")$(msg -ama "]") $(msg -verm2 "[")${vesaoSCT}$(msg -verm2 "]")"
 #[[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 }
-version2="\033[1;32m7.0"
+version2="$(msg -verd "7.0")"
 #version=$(wget -qO- https://git.io/admplusv)
 version=$(curl -sSL "https://git.io/admplusv")
 update1=$(wget -qO- https://www.admplus.tk/update.txt)
 key=$(cat /etc/newadm/key.txt)
 mensaje=$(cat /etc/newadm/message.txt)
-name="\033[1;32m[NEW-ADMPlus]"
+name="$(msg -verd "[NEW-ADMPlus]")"
 plain="\033[0m"
 cyan="\033[1;36m"
 red="\033[1;31m"
@@ -43,7 +43,7 @@ msg -verm2 "$(fun_trans "RESELLER AUTORIZADO"): $(msg -bra "$mensaje")"
 msg -verm2 "$(fun_trans "KEY USADA"): $(msg -bra "$key")"
 version_admplusfix
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}${version} ${cyan}${update} ${plain}"
+msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "${version}") $(msg -azu "${update}")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -ama "${mejor} $(msg -ama "$(fun_trans "Instalador de Trojan")")"
 msg -ama "${mejor} $(msg -ama "$(fun_trans "Creador de usuarios temporales")")"
@@ -54,7 +54,7 @@ msg -ama "${mejor} $(msg -ama "$(fun_trans "Bot de Administración Telegram")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "Nuevos comandos al Bot de Telegram")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "Creador de usuarios temporales (Bot Telegram)")")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "$(fun_trans "Lista de Cambios") ${name} ${yellow}v7.2 ${cyan}[21/02/2021] ${plain}"
+msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "v7.2") $(msg -azu "${update}")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -ama "${add} $(msg -ama "$(fun_trans "SSLH MULTIPLEX")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "BADVPN - SOPORTE NETFLIX")")"
