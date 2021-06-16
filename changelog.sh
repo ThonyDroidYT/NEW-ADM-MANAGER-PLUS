@@ -5,7 +5,7 @@ SCPinst="/etc/ger-inst" #&& [[ ! -d ${SCPinst} ]] && exit
 SCPusr="/etc/ger-user" #&& [[ ! -d ${SCPusr} ]] && exit
 #VERIF VERSION
 P_SERVER="https://www.admplus.tk"
-v1=$(wget -qO- https://git.io/admplusv)
+v1=$(curl -sSL "https://git.io/admplusv")
 v2=$(cat ${SCPfrm}/version.txt)
 v3=$(curl -sSL "${P_SERVER}/version.txt")
 version_admplusfix () {
