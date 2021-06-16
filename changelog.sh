@@ -47,7 +47,7 @@ msg -ama "${mejor} $(msg -ama "$(fun_trans "Bot de Administración Telegram")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "Nuevos comandos al Bot de Telegram")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "Creador de usuarios temporales (Bot Telegram)")")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "v7.2") $(msg -azu "10/02/2021")"
+msg -azu "$(fun_trans "Lista de Cambios") ${name} $(msg -ama "v7.2") $(msg -azu "[10/02/2021]")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -ama "${add} $(msg -ama "$(fun_trans "SSLH MULTIPLEX")")"
 msg -ama "${add} $(msg -ama "$(fun_trans "BADVPN - SOPORTE NETFLIX")")"
