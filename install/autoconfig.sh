@@ -45,7 +45,7 @@ clear && clear
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -verd "            PAYLOAD + SSL |BY THONYDROID "
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-msg -azu "               $(fun_trans "SCRIPT AUTOCONFIGURACION") $(msg -verd "[NEW-ADMPlus]")"
+msg -azu "$(fun_trans "SCRIPT AUTOCONFIGURACION") $(msg -verd "[NEW-ADMPlus]")"
 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
 msg -bra "$(fun_trans "Requiere tener libre los puertos"): 80, 443"
 echo
