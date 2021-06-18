@@ -21,23 +21,23 @@ fun_bar2 () {
           touch $HOME/fim
           ) > /dev/null 2>&1 &
           tput civis
-		  [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
-          msg -bra "    $(fun_trans "ESPERE")..${col5}["
+		  echo -e "${col1}---------------------------------------------------${col0}"
+          echo -ne "${col7}    ESPERE..${col5}["
           while true; do
           for((i=0; i<18; i++)); do
-          echo -ne "${col4}"
+          echo -ne "${col4}#"
           sleep 0.2s
           done
          [[ -e $HOME/fim ]] && rm $HOME/fim && break
-         msg -purple " "
+         echo -e "${col5}"
          sleep 1s
          tput cuu1
          tput dl1
-         msg -bra "    $(fun_trans "ESPERE")..${col5}["
+         echo -ne "${col7}    ESPERE..${col5}["
          done
-         echo -e "$(msg -purple "]")$(msg -bra " -")$(msg -verd " $(fun_trans "INSTALADO")!")"
+         echo -e "${col5}]${col7} -${col2} INSTALADO !${col7}"
          tput cnorm
-		 [[ -e "$HOME/bar2" ]] && msg -bar2 || msg -bar
+		 echo -e "${col1}---------------------------------------------------${col0}"
         }
         
 
