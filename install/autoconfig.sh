@@ -368,7 +368,6 @@ msg -bra "$(fun_trans "AHORA HAGA LO SIGUENTE") "
 msg -bra "$(fun_trans "PARA CREAR UN USUARIO ESCRIBA") :CREARUSER "
 msg -bra "$(fun_trans "PARA REMOVE UN USUARIO ESCRIBA") :REMOUSER "
 echo
-echo
 echo '
 echo
 read -p "Usuario :" name
