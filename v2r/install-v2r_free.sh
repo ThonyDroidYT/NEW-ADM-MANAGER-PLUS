@@ -182,7 +182,7 @@ figlet " -V2RAY-" | lolcat
 Key="qraKatsil/670??7?@808d@33/8888:66*58*93?*07@"
 msg -ne "# Verificando Key # : "
 REQUEST=$(echo $SCPresq|$SCPdec)
-REQUEST2="${REQUES}/${SCPver}"
+REQUEST2="${REQUEST}/${SCPver}"
 cd $HOME
 wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Key Completa" || {
    echo -e "\033[1;91m Key Incompleta"
