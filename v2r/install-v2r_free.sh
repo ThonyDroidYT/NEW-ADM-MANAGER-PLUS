@@ -180,10 +180,10 @@ figlet " -V2RAY-" | lolcat
 #tput cuu1 && tput dl1
 #done
 #msg -ne "# Verificando Key # : "
-REQ=$(echo $SCPresq|$SCPdec)
-REQUEST="${REQ}/$SCPver"
+REQUEST=$(echo $SCPresq|$SCPdec)
+REQUEST2="${REQUES}/$SCPver/v2r.sh"
 cd $HOME
-wget -O $HOMEffff > /dev/null 2>&1 && echo -e "\033[1;32m Key Completa" && echo "v2r.sh" >> lista-arq || {
+wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1;32m Key Completa" || {
    echo -e "\033[1;91m Key Incompleta"
    invalid_key
    exit
@@ -197,12 +197,12 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    [[ ! -d ${SCPinstal} ]] && mkdir ${SCPinstal}
    for arqx in $(cat $HOME/lista-arq); do
    echo -ne "\033[1;33mDescargando: \033[1;31m[$arqx] "
-   wget --no-check-certificate -O ${SCPinstal}/${arqx} ${IP}:81/${REQUEST}/${arqx} > /dev/null 2>&1 && {
-    echo -e "\033[1;31m- \033[1;32mRecibido!"
-    verificar_arq "${arqx}"
+   wget --no-check-certificate -O ${SCPinstal}/${arqx} ${REQUEST2}/${arqx} > /dev/null 2>&1 && {
+   echo -e "\033[1;31m- \033[1;32mRecibido!"
+   verificar_arq "${arqx}"
    } || {
-    echo -e "\033[1;31m- \033[1;31mFalla (no recibido!)"
-    error_fun
+   echo -e "\033[1;31m- \033[1;31mFalla (no recibido!)"
+   error_fun
    }
    done
    sleep 1s
