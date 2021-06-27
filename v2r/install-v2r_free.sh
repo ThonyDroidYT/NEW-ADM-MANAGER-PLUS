@@ -5,7 +5,8 @@ IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
 SCPinstal="$HOME/install"
 SCPresq="aHR0cHM6Ly93d3cuYWRtcGx1cy50ay92MnI="
-SCPver="2.6"
+SCPver=$1
+[ -z "$SCPver" ] && $SCPver="2.6"
 rm $(pwd)/$0
 
 add-apt-repository universe
