@@ -4,6 +4,6 @@
 
 Instalador: sudo wget https://raw.githubusercontent.com/rudi9999/v2ray_manager/main/install-v2r.sh; chmod +x install-v2r.sh; ./install-v2r.sh
 
-#Version Free
+# Version Free
 
 sudo wget https://www.admplus.tk/v2r/install-v2r_free.sh -O install-v2r.sh; chmod +x install-v2r.sh; ./install-v2r.sh
