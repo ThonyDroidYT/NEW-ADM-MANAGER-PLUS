@@ -199,11 +199,11 @@ if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") 
    for arqx in $(cat $HOME/lista-arq); do
    echo -ne "\033[1;33mDescargando: \033[1;31m[$arqx] "
    wget --no-check-certificate -O ${SCPinstal}/${arqx} ${REQUEST2}/${arqx} > /dev/null 2>&1 && {
-   echo -e "\033[1;31m- \033[1;32mRecibido!"
-   verificar_arq "${arqx}"
+    echo -e "\033[1;31m- \033[1;32mRecibido!"
+    verificar_arq "${arqx}"
    } || {
-   echo -e "\033[1;31m- \033[1;31mFalla (no recibido!)"
-   error_fun
+    echo -e "\033[1;31m- \033[1;31mFalla (no recibido!)"
+    error_fun
    }
    done
    sleep 1s
