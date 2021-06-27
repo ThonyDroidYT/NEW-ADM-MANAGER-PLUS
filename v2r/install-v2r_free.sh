@@ -4,7 +4,7 @@ BARRA="\033[1;36m-----------------------------------------------------\033[0m"
 IVAR="/etc/http-instas"
 SCPT_DIR="/etc/SCRIPT"
 SCPinstal="$HOME/install"
-SCPresq="hhshshs"
+SCPresq="aHR0cHM6Ly93d3cuYWRtcGx1cy50ay92MnI="
 SCPver="2.6"
 rm $(pwd)/$0
 
@@ -190,7 +190,7 @@ wget -O $HOMEffff > /dev/null 2>&1 && echo -e "\033[1;32m Key Completa" && echo 
    }
 IP=$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}') && echo "$IP" > /usr/bin/vendor_code
 sleep 1s
-function_verify
+#function_verify
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
    msg -bar2
    msg -e "\033[1;33mDescargando archivos... \033[1;31m[Proyect by @Rufu99]"
