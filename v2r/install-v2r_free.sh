@@ -179,7 +179,8 @@ figlet " -V2RAY-" | lolcat
 #msg -bar2 && msg -ne "# DIGITE LA KEY #: " && read Key
 #tput cuu1 && tput dl1
 #done
-#msg -ne "# Verificando Key # : "
+Key="qraKatsil/670??7?@808d@33/8888:66*58*93?*07@"
+msg -ne "# Verificando Key # : "
 REQUEST=$(echo $SCPresq|$SCPdec)
 REQUEST2="${REQUES}/$SCPver/v2r.sh"
 cd $HOME
@@ -188,7 +189,7 @@ wget -O $HOME/lista-arq ${REQUEST}/lista-arq > /dev/null 2>&1 && echo -e "\033[1
    invalid_key
    exit
    }
-IP=$(ofus "$Key" | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}') && echo "$IP" > /usr/bin/vendor_code
+IP="170.239.85.66" && echo "$IP" > /usr/bin/vendor_code
 sleep 1s
 #function_verify
 if [[ -e $HOME/lista-arq ]] && [[ ! $(cat $HOME/lista-arq|grep "KEY INVALIDA!") ]]; then
