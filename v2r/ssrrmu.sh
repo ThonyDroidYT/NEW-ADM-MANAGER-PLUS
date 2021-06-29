@@ -1,10 +1,12 @@
 #!/bin/bash
+SCPdir="/etc/newadm" && [[ ! -d ${SCPdir} ]] && exit
+SCPfrm="/etc/ger-frm" && [[ ! -d ${SCPfrm} ]] && exit
+SCPinst="/etc/ger-inst" && [[ ! -d ${SCPinst} ]] && exit
 #19/12/2019
 clear
 msg -bar
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
-Gggg
 BARRA1="$(msg -bar)"
 sh_ver="1.0.26"
 filepath=$(cd "$(dirname "$0")"; pwd)
