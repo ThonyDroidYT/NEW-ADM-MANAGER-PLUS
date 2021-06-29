@@ -1992,7 +1992,7 @@ elif [[ "${action}" == "monitor" ]]; then
 	crontab_monitor_ssr
 else
 #msg -ama "$(fun_trans "ADMINISTRADOR DE CUENTAS SHADOWSOCKS")\033[1;32m[NEW-ADM-PLUS]"
-echo -e "$(fun_trans "ADMINISTRADOR DE CUENTAS SHADOWSOCKS-R")  ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix} \033[1;32m[NEW-ADM-PLUS]
+echo -e "$(fun_trans "ADMINISTRADOR DE CUENTAS SHADOWSOCKS-R")  ${Red_font_prefix}[v${sh_ver}]${Font_color_suffix} \033[1;32m[NEW-ADMPlus]
 $(msg -bar)
   ${Green_font_prefix}1.${Font_color_suffix} Instalar ShadowsocksR 
   ${Green_font_prefix}2.${Font_color_suffix} Actualizar ShadowsocksR
