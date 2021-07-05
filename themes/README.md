@@ -1,5 +1,5 @@
 #### Tema 1
-<img src="./tema1.jpg" width="400" height="900">
+<img src="./tema1.jpg" width="400" height="600">
 
 ## Aplicar Tema 1
 
