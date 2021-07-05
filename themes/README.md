@@ -1,5 +1,5 @@
 #### Tema 1
-![logo](https://github.com/ThonyDroidYT/NEW-ADM-MANAGER-PLUS/blob/gh-pages/themes/tema1.jpg)
+![logo](https://github.com/ThonyDroidYT/NEW-ADM-MANAGER-PLUS/blob/gh-pages/themes/tema1.jpg {width=40px height=400px})
 
 ## Aplicar Tema 1
 
