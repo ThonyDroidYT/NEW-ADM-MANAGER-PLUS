@@ -20,7 +20,7 @@ bash <(curl -Ls https://www.admplus.tk/themes/tema2.sh)
 bash <(curl -Ls https://www.admplus.tk/themes/tema3.sh)
 
 #### Tema 4
-<img src="./tema4.jpg" width="400" height="500">
+<img src="./Tema4.jpg" width="400" height="500">
 
 ## Aplicar Tema 4
 
