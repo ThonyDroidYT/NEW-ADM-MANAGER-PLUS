@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "\033[1;33mAplicando Tema 4\033[0m"
+echo -e "\033[1;33mAplicando Tema 2\033[0m"
 rm -rf /etc/new-adm-color
 sleep 1s
 echo "6 6 6 6 6 6 1 1" >> /etc/new-adm-color
