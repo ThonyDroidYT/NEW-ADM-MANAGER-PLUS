@@ -25,3 +25,7 @@ bash <(curl -Ls https://www.admplus.tk/themes/tema3.sh)
 ## Aplicar Tema 4
 
 bash <(curl -Ls https://www.admplus.tk/themes/tema4.sh)
+
+##### Segunda forma
+
+bash <(curl -Ls https://www.admplus.tk/themes/temas.sh) 2
