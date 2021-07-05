@@ -5,7 +5,7 @@ rm -rf /etc/newadm/barra
 sleep 1s
 case $1 in
 1)
-color=""
+color="7 6 5 4 3 2 1 1"
 ;;
 2)
 color=""
