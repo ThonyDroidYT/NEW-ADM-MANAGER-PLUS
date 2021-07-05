@@ -1,5 +1,5 @@
 #### Tema 1
-<img src="https://github.com/ThonyDroidYT/NEW-ADM-MANAGER-PLUS/blob/gh-pages/themes/tema1.jpg" width="48">
+<img src="./tema1.jpg" width="48">
 
 #![logo]( {width=40px height=400px})
 
