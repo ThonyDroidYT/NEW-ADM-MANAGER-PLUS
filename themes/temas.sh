@@ -8,10 +8,10 @@ case $1 in
 color="7 6 5 4 3 2 1 1"
 ;;
 2)
-color=""
+color="6 6 6 6 6 6 1 1"
 ;;
 3)
-color=""
+color="6 5 2 3 4 7 1 1"
 ;;
 4)
 color="3 4 5 1 6 7 1"
