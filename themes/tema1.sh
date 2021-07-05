@@ -1,6 +1,7 @@
 #!/bin/bash
 echo -e "\033[1;33mAplicando Tema 1\033[0m"
 rm -rf /etc/new-adm-color
+rm -rf /etc/newadm/barra
 sleep 1s
 echo "7 6 5 4 3 2 1 1" >> /etc/new-adm-color
 echo "3" >> /etc/newadm/barra
