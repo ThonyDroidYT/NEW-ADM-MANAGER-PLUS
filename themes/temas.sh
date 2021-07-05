@@ -17,7 +17,7 @@ color="6 5 2 3 4 7 1 1"
 color="3 4 5 1 6 7 1"
 ;;
 *)
-color="$@"
+color="$2"
 esac
 echo "${color}" >> /etc/new-adm-color
 echo "1" >> /etc/newadm/barra
