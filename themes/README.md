@@ -1,5 +1,5 @@
 #### Tema 1
-<img src="./tema1.jpg" width="48">
+<img src="./tema1.jpg" width="48" height="400px">
 
 #![logo]( {width=40px height=400px})
 
